@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+body {
+  background-color: #0C0F14;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: calc(15px + 0.39vw);
+}
+
+.glow-effect {
+  width: 23.4rem;
+  height: 23.4rem;
+  background-color: rgba(217, 128, 70, 0.25);
+  border-radius: 33.33rem;
+  filter: blur(128px);
+  z-index: -1;
+  margin-left: -40%;
+  position: fixed;
+  top: 30%;
+}
+
+.topbar {
+  width: 84.27%;
+  max-width: 800px;
+  position: relative;
+  margin: 2.93rem auto 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topbar .hamburger {
+  background-color: transparent;
+  border: none;
+}
+.topbar .hamburger img {
+  height: 2.8rem;
+}
+.topbar .avatar {
+  background-color: transparent;
+  border: none;
+}
+.topbar .avatar img {
+  height: 2.8rem;
+}
+
+.top-elements-container {
+  position: relative;
+  margin: 0 auto;
+  width: 81.33%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.93rem;
+}
+.top-elements-container .header {
+  align-self: flex-start;
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: 400;
+}
+.top-elements-container .header span {
+  color: #D98046;
+  font-weight: 500;
+}
+.top-elements-container .search-container {
+  width: 100%;
+  height: 3.33rem;
+  border-radius: 1.06rem;
+  padding: 0.86rem 1.13rem;
+  background-color: rgba(255, 255, 255, 0.075);
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.top-elements-container .search-container input {
+  flex: 1;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 0.86rem;
+  color: #83868D;
+}
+.top-elements-container .search-container img {
+  opacity: 50%;
+}
+.top-elements-container .search-container .visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.error {
+  margin: 2rem;
+  font-size: 1rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.loading {
+  margin: 2rem;
+  font-size: 1rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.card-container {
+  width: 81.33%;
+  position: relative;
+  margin: 1.93rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.33rem;
+}
+.card-container .card {
+  width: 100%;
+  height: 16.6rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 23px;
+  padding: 0.6rem 0.6rem 0.73rem 0.6rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.03) 100%);
+}
+.card-container .card .rating-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(196, 196, 196, 0.08);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  border-radius: 0px 15px;
+  position: absolute;
+  align-self: flex-end;
+  width: 2.8rem;
+  height: 1.33rem;
+  gap: 0.2rem;
+}
+.card-container .card .rating-container .rating-img {
+  height: 0.66rem;
+  width: 0.66rem;
+}
+.card-container .card .rating-container .rating-score {
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+.card-container .card .product-img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.card-container .card .name-container {
+  display: flex;
+  width: 90%;
+  align-self: flex-start;
+  flex-direction: column;
+  margin-top: 0.8rem;
+}
+.card-container .card .name-container .drink-name {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+.card-container .card .name-container .drink-formcode {
+  color: #83868D;
+  font-weight: 400;
+  font-size: 0.76rem;
+}
+.card-container .card .price-container {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 90%;
+  bottom: 0;
+  align-items: center;
+  padding: 0.8rem 0.5rem 0.8rem 0;
+}
+.card-container .card .price-container .currency-sign {
+  color: #D98046;
+  margin-right: 0.3rem;
+}
+.card-container .card .price-container .price {
+  font-size: 1.2rem;
+  color: #FEFBF9;
+}
+.card-container .card .price-container .add-btn {
+  width: 2.26rem;
+  height: 2.06rem;
+  background-color: #D98046;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 0.73rem;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+.card-container .card .price-container .add-btn:active {
+  background-color: #874f29;
+}
+
+.menubar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4.93rem;
+  width: 100%;
+  background-color: rgba(14, 17, 22, 0.96);
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+}
+.menubar footer {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+.menubar footer button {
+  height: 1.6rem;
+  background-color: transparent;
+  border: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
